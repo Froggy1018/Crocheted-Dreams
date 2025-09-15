@@ -1,0 +1,34 @@
+body{
+    background-color: white;	
+}
+
+#logo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#6F4E37;
+    font-size: 40px;
+}
+
+img{
+    width: 0px; 
+    height: auto px;
+    background-color:white;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.colored-section{
+    background-color: #6F4E37;
+    float:left;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    width: 50% ;
+    height: auto;
+
+}
