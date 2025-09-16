@@ -1,30 +1,82 @@
 body{
-    background-color: white;	
+    background-color: #74512d;	
+    color: #f8f4e1;
 }
 
-#logo{
+
+.container{
+    background-color: #543310;   
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.logo, .slogan{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color:#6F4E37;
-    font-size: 20px;
+    color:#f8f4e1;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    text-align: center;
 }
 
 .about{
-    float: left;
     font-size:12px
     padding: 10px;
     border-radius: 5px;
     font-family:'Times New Roman', Times, serif;
-    width: 50% ;
-    height: auto;
+    padding-left: 45px;
+    padding-right:40px;
 
 }
 
 .Orderformtext{
-    padding-top: 30%;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color:#543310;
+    font-size: 20px;
+
+
+}
+
+footer{
+    padding-top: 100%;
+    text-align:center;
+}
+
+#ab{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#para{
+    font-size: 18px;
+}
+
+.boxedtext{
+    border: 2px #af8f6f;
+    padding: 10px;
+    background-color: #af8f6f;
+    margin: 15px 0;
+    border-radius: 5px;
+    padding-bottom: 50px;
+}
+
+#name{
+    color:#543310;
+    font-size: 20px;
+}
+
+#email{
+    color:#543310;
+    font-size: 20px;    
+}
+
+#classr{
+    color:#543310;
+    font-size: 20px;
+}
+
+#order{
+    color:#543310;
+    font-size: 20px;
 }
