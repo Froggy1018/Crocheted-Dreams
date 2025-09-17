@@ -4,11 +4,16 @@ body{
 }
 
 
-.container{
+header{
     background-color: #543310;   
     padding: 20px;
-    max-width: 1200px;
+    width: auto;
+    height:auto;
+    box-sizing: border-box;
+    margin: 0;
 }
+
+/*find out how to fill in the gaps TWT */
 
 .logo, .slogan{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -23,9 +28,9 @@ body{
     font-size:12px
     padding: 10px;
     border-radius: 5px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif ;
     padding-left: 45px;
-    padding-right:40px;
+    padding-right:35px;
 
 }
 
@@ -34,8 +39,6 @@ body{
     text-align: center;
     color:#543310;
     font-size: 20px;
-
-
 }
 
 footer{
@@ -50,33 +53,108 @@ footer{
 
 #para{
     font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .boxedtext{
     border: 2px #af8f6f;
     padding: 10px;
     background-color: #af8f6f;
-    margin: 15px 0;
+    margin: 10px 0;
     border-radius: 5px;
     padding-bottom: 50px;
 }
 
-#name{
+#name, #email, #file{
     color:#543310;
-    font-size: 20px;
+    font-size: 25px;
+    padding-left: 20px;
 }
 
 #email{
     color:#543310;
-    font-size: 20px;    
-}
-
-#classr{
-    color:#543310;
-    font-size: 20px;
+    font-size: 25px;   
+    padding-left: 20px; 
 }
 
 #order{
     color:#543310;
     font-size: 20px;
+}
+
+#nameb, #emailb, #fileup{
+    border: 1px #af8f6f;
+    color:#543310;
+    background-color: #f8f4e1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    width: 95%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#submitb{
+    border: 1px #af8f6f;
+    color: #543310;
+    background-color: #f8f4e1;
+    padding:15px; 
+    margin-bottom: 20px; 
+    border-radius: 100px;
+    width: 25%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+#totalb{
+    border:1px #af8f6f;
+    color: #543310;
+    background-color: #f8f4e1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    width: fit-content;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#submitb button:hover{
+    opacity:0.7;
+}
+
+
+.insta{
+    color:#af8f6f
+}
+
+
+.card{
+    box-shadow: 0 4px 8px 0 #543310;
+    max-width: 150px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+}
+
+.price{
+    color: #543310;
+    font-size: 20px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding:12px;
+    color: #af8f6f;
+    background-color: #543310;
+    text-align:center;
+    cursor: pointer;
+    width:100%;
+    font-size:18px;
+}
+
+.card button:hover{
+    opacity:0.7;
 }
