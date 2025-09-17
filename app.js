@@ -1,1 +1,1 @@
-//https://designmodo.com/shopping-cart-ui/ use this to make the shopping bag//
+//https://designmodo.com/shopping-cart-ui/ use this tut to make the shopping bag//
