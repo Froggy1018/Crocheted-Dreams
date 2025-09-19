@@ -5,9 +5,9 @@ What is it??
 
 How does it work? 
     
-    Spaces to put name, email and orders in 
+    Spaces to put name, email, browse through items sold and put orders in
 
 
 What was difficult? 
 
-    The CSS and layout TWT
+    The CSS, layout, the JS and python program to automatically add orders in TWT
