@@ -252,5 +252,13 @@ footer{
 
 #cart{
     margin-top: 10px;
-    color: #543310
+    color: #543310;
 }
+
+/*
+- fix the custom and hair accessory cart display
+- fix the column situation in the keychains: items tab
+- make the checkout section reset when another person opens it or 
+when the order is submitted
+- fix 
+*/ 
