@@ -238,7 +238,7 @@ footer{
 }
 
 
-#character,#flower, #item ,#food,#animal{
+#character,#flower, #item, #food, #animal{
     display: flex; 
     flex-wrap: wrap;
 }
@@ -258,7 +258,5 @@ footer{
 /*
 - fix the custom and hair accessory cart display
 - fix the column situation in the keychains: items tab
-- make the checkout section reset when another person opens it or 
-when the order is submitted
-- fix 
+- replace the placeholder pictures
 */ 
