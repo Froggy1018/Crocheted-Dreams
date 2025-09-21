@@ -223,13 +223,34 @@ footer{
     margin-right: auto;
 }
 
-
-#character,#flower,#item,#food,#animal{
-    display: flex; flex-wrap: wrap;
+.card {
+    width: 220px;
+    min-height: 350px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #74512d;
+    border-radius: 15px;
 }
+
+
+#character,#flower, #item ,#food,#animal{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
 
 #textsection{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: #543310;
+}
+
+#cart{
+    margin-top: 10px;
+    color: #543310
 }
