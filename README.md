@@ -10,4 +10,4 @@ How does it work?
 
 What was difficult? 
 
-    The CSS, layout, the JS and python program to automatically add orders in TWT
+    The CSS, layout, the JS program to automatically add orders in TWT
