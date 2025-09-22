@@ -66,7 +66,7 @@ footer{
     padding-bottom: 50px;
 }
 
-#name, #email, #file, #item{
+#name, #email, #message, #item{
     color:#543310;
     font-size: 25px;
     padding-left: 20px;
@@ -82,7 +82,7 @@ footer{
     font-size: 20px;
 }
 
-#nameb, #emailb, #fileup{
+#nameb, #emailb, #messageb{
     border: 1px #af8f6f;
     color:#543310;
     background-color: #f8f4e1;

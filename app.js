@@ -39,18 +39,24 @@ function updateCartDisplay(){
 }
 
 
+
+// Submits order to Google Apps Script Web App
 function submitToSheet() {
+    // Get form values
     const name = document.getElementById('nameb') ? document.getElementById('nameb').value : '';
     const email = document.getElementById('emailb') ? document.getElementById('emailb').value : '';
-    const cartData = JSON.stringify(cart);
+    // Compose cart data
+    const cartData = cart;
     let total = 0;
-    for (let product in cart) {
-        total += cart[product].totalPrice;
+    for (let product in cartData) {
+        total += cartData[product].totalPrice;
     }
 
-    fetch('https://script.google.com/macros/s/AKfycbyr-yIhVDjkPUVQpe2j4oMejstlum_27RlO4aY45ypeF_ejFkeTCSUqkRQ0n5pNr4I/exec', {
+    // Debug: alert what will be sent
+    alert('Submitting order...\nName: ' + name + '\nEmail: ' + email + '\nTotal: ' + total + '\nCart: ' + JSON.stringify(cartData));
+
+    fetch('https://script.google.com/macros/s/AKfycbzz_QmuuZpJ7MOVkGpScfDllCL_EU3lJz83GKUIJooJoPcB3ih9gHuszncT1eGrR0I/exec', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -61,11 +67,20 @@ function submitToSheet() {
             total: total
         })
     })
-    .then(() => {
-        alert('Order submitted!');
-        resetCart();
+    .then(async response => {
+        let text = await response.text();
+        alert('Response from server: ' + text + '\nStatus: ' + response.status + ' ' + response.statusText);
+        if (response.ok) {
+            resetCart();
+        } else {
+            alert('Server error: ' + text);
+        }
+    })
+    .catch(error => {
+        alert('Submission failed (network or CORS): ' + error + '\nCheck deployment permissions and CORS headers.');
     });
 }
+
 
 
 // Load cart and update display on page load
