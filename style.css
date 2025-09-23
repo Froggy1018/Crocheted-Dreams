@@ -156,10 +156,10 @@ footer{
     color: #af8f6f;
     background-color: #543310;
     text-align:center;
-    cursor: pointer;
     width:100%;
     font-size:18px;
     font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
     border-radius: 100px;
 }
 
@@ -255,6 +255,31 @@ footer{
     color: #543310;
 }
 
+#quantity{
+    border-radius: 100px;
+    margin-bottom: 5px;
+    border:none;
+    padding:12px;
+    color: #af8f6f;
+    background-color: #543310;
+    text-align:center;
+    width:100%;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#color{
+    border-radius: 100px;
+    border:none;
+    padding:12px;
+    color: #af8f6f;
+    background-color: #543310;
+    text-align:center;
+    width:100%;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+    
 /*
 - fix the custom and hair accessory cart display
 - fix the column situation in the keychains: items tab
