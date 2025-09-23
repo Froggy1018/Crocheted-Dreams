@@ -28,7 +28,7 @@
 	<h2>Plumera Hair Clip</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">100 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-plumera" id="quantity-plumera" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -40,8 +40,7 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	<select name="color" id="color">
+	<select name="color-plumera" id="color-plumera" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -57,7 +56,7 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Plumera Hair Clip',100 )">Add to Cart</button></p>
+	<p><button onclick="addToCart('Plumera Hair Clip', 100, 'plumera')">Add to Cart</button></p>
 
 </div>
 
@@ -65,7 +64,7 @@
 	<h2>Angry Clip</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-angryclip" id="quantity-angryclip" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -77,14 +76,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Angry Clip', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Angry Clip', 50, 'angryclip')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Krusty Krab Hat</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">70 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-krustykrab" id="quantity-krustykrab" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -96,14 +95,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Krusty Krab Hat', 70 )">Add to Cart</button></p>
+	<p><button onclick="addToCart('Krusty Krab Hat', 70, 'krustykrab')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Sprout Clip</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-sproutclip" id="quantity-sproutclip" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -115,14 +114,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Sprout Clip', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Sprout Clip', 50, 'sproutclip')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Egg Clip</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-eggclip" id="quantity-eggclip" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -134,14 +133,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Egg Clip', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Egg Clip', 50, 'eggclip')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Hair Clips</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">40 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-hairclips" id="quantity-hairclips" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -153,10 +152,7 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	-maybe seperate pictures?-
-
-	<select name="color" id="color">
+	<select name="color-hairclips" id="color-hairclips" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -172,14 +168,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Hair Clips', 40)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Hair Clips', 40, 'hairclips')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Strawberry Headband</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">130 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-strawberryheadband" id="quantity-strawberryheadband" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -191,14 +187,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Strawberry Headband', 130)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Strawberry Headband', 130, 'strawberryheadband')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Sprout Headband</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">140 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-sproutheadband" id="quantity-sproutheadband" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -210,19 +206,18 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	<select name="color" id="color">
+	<select name="color-sproutheadband" id="color-sproutheadband" class="color">
 		<option value="Light Green">Light Green</option>
 		<option value="Dark Green">Dark Green</option>
 	</select>
-	<p><button onclick="addToCart('Sprout Headband', 140)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Sprout Headband', 140, 'sproutheadband')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Tulip Headband</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">150 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-tulipheadband" id="quantity-tulipheadband" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -234,20 +229,22 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	<select name="color" id="color">
+	<select name="color-tulipheadband" id="color-tulipheadband" class="color">
 		<option value="Pink">Pink</option>
 		<option value="Purple">Purple</option>
 		<option value="Red">Red</option>
-		</select>
-	<p><button onclick="addToCart('Tulip Headband', 150)">Add to Cart</button></p>
+	</select>
+	<p><button onclick="addToCart('Tulip Headband', 150, 'tulipheadband')">Add to Cart</button></p>
 </div>
 </div>
 
-<b><h2>Your Cart</h2>
+<b><h2>Your Cart</h2></b>
 <ul id="cart"></ul>
 <button type="button" id="totalb"><b>&#9733; Total: placeholder &#9733;</b></button>
-</b>
+
+<button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear Cart</b></button>
+
+<button type="button" id="checkoutb" onclick="location.href='checkout.html'"><b>Checkout</b></button>
 
 </div>
 
