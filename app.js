@@ -7,14 +7,51 @@ function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-function addToCart(productName, productPrice){
-    if (cart[productName]){
-        cart[productName].quantity += 1;
-        cart[productName].totalPrice += productPrice;
+
+
+function addToCart(productName, productPrice, idSuffix) {
+    // If idSuffix is provided, try to get quantity/color from selectors
+    let quantity = 1;
+    let color = undefined;
+    if (idSuffix) {
+        const quantityElem = document.getElementById('quantity-' + idSuffix);
+        const colorElem = document.getElementById('color-' + idSuffix);
+        if (quantityElem) quantity = parseInt(quantityElem.value);
+        if (colorElem) color = colorElem.value;
+    }
+    const key = color ? `${productName} (${color})` : productName;
+    if (cart[key]) {
+        cart[key].quantity += quantity;
+        cart[key].totalPrice += productPrice * quantity;
     } else {
-        cart[productName] = {
-            quantity: 1,
-            totalPrice: productPrice
+        cart[key] = {
+            quantity: quantity,
+            color: color,
+            totalPrice: productPrice * quantity
+        };
+    }
+    saveCart();
+    updateCartDisplay();
+}
+
+// For backwards compatibility, keep addCustomToCart as an alias
+function addCustomToCart(productName, productPrice, idSuffix) {
+    addToCart(productName, productPrice, idSuffix);
+}
+
+// For custom items with color and quantity selectors
+function addCustomToCart(productName, productPrice, idSuffix) {
+    const quantity = parseInt(document.getElementById('quantity-' + idSuffix).value);
+    const color = document.getElementById('color-' + idSuffix).value;
+    const key = `${productName} (${color})`;
+    if (cart[key]) {
+        cart[key].quantity += quantity;
+        cart[key].totalPrice += productPrice * quantity;
+    } else {
+        cart[key] = {
+            quantity: quantity,
+            color: color,
+            totalPrice: productPrice * quantity
         };
     }
     saveCart();
@@ -28,7 +65,8 @@ function updateCartDisplay(){
     let total = 0;
     for(let product in cart){
         const listItem = document.createElement('li');
-        listItem.innerText = `${product} - Quantity: ${cart[product].quantity} - total Price: ₱${cart[product].totalPrice.toFixed(2)}`;
+        let colorText = cart[product].color ? `, Color: ${cart[product].color}` : '';
+        listItem.innerText = `${product} - Quantity: ${cart[product].quantity}${colorText} - total Price: ₱${cart[product].totalPrice.toFixed(2)}`;
         cartList.appendChild(listItem);
         total += cart[product].totalPrice;
     }
@@ -38,48 +76,6 @@ function updateCartDisplay(){
     }
 }
 
-
-
-// Submits order to Google Apps Script Web App
-function submitToSheet() {
-    // Get form values
-    const name = document.getElementById('nameb') ? document.getElementById('nameb').value : '';
-    const email = document.getElementById('emailb') ? document.getElementById('emailb').value : '';
-    // Compose cart data
-    const cartData = cart;
-    let total = 0;
-    for (let product in cartData) {
-        total += cartData[product].totalPrice;
-    }
-
-    // Debug: alert what will be sent
-    alert('Submitting order...\nName: ' + name + '\nEmail: ' + email + '\nTotal: ' + total + '\nCart: ' + JSON.stringify(cartData));
-
-    fetch('https://script.google.com/macros/s/AKfycbzz_QmuuZpJ7MOVkGpScfDllCL_EU3lJz83GKUIJooJoPcB3ih9gHuszncT1eGrR0I/exec', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            name: name,
-            email: email,
-            cart: cartData,
-            total: total
-        })
-    })
-    .then(async response => {
-        let text = await response.text();
-        alert('Response from server: ' + text + '\nStatus: ' + response.status + ' ' + response.statusText);
-        if (response.ok) {
-            resetCart();
-        } else {
-            alert('Server error: ' + text);
-        }
-    })
-    .catch(error => {
-        alert('Submission failed (network or CORS): ' + error + '\nCheck deployment permissions and CORS headers.');
-    });
-}
 
 
 

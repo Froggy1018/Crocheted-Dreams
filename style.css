@@ -94,7 +94,7 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#submitb{
+#submitb, #clearcartb, #checkoutb{
     border: 1px #af8f6f;
     color: #543310;
     background-color: #f8f4e1;
@@ -105,6 +105,7 @@ footer{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    margin-top: 8px;
 }
 
 #totalb{
@@ -118,11 +119,6 @@ footer{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
-
-#submitb button:hover{
-    opacity:0.7;
-}
-
 
 .insta{
     color:#74512d
@@ -156,11 +152,13 @@ footer{
     color: #af8f6f;
     background-color: #543310;
     text-align:center;
-    cursor: pointer;
     width:100%;
     font-size:18px;
     font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
     border-radius: 100px;
+    margin-top: 0;
+
 }
 
 .card button:hover{
@@ -255,8 +253,37 @@ footer{
     color: #543310;
 }
 
+.quantity{
+    border-radius: 100px;
+    margin-bottom: 5px;
+    border:none;
+    padding:12px;
+    color: #af8f6f;
+    background-color: #543310;
+    text-align:center;
+    width:100%;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.color{
+    border-radius: 100px;
+    border:none;
+    padding:12px;
+    color: #af8f6f;
+    background-color: #543310;
+    text-align:center;
+    width:100%;
+    font-size:18px;
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+    
 /*
 - fix the custom and hair accessory cart display
-- fix the column situation in the keychains: items tab
 - replace the placeholder pictures
+- redo the JS for the spreadsheet mover
+- Change title to logo
+- make it so that each item can be removed individually from the cart
+- make it so that the button will change color when its already in the cart
 */ 

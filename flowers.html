@@ -28,36 +28,155 @@
 	<h2>Sunflowers</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">200 PHP</p>
-	<p><button onclick="addToCart('Sunflowers', 200)">Add to Cart</button></p>
+	<select name="quantity-sunflowers" id="quantity-sunflowers" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
 
+	<select name="color-sunflowers" id="color-sunflowers" class="color">
+		<option value="Yellow">Yellow</option>
+		<option value="Orange">Orange</option>
+		<option value="Red">Red</option>
+		<option value="Other">Other</option>
+	</select>
+	<p><button onclick="addToCart('Sunflowers', 200, 'sunflowers')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Sunflower (Realistic)</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">300 PHP</p>
-	<p><button onclick="addToCart('Sunflower (Realistic)',300)">Add to Cart</button></p>
+
+	<select name="quantity-sunflowerrealistic" id="quantity-sunflowerrealistic" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+	<select name="color-sunflowerrealistic" id="color-sunflowerrealistic" class="color">
+		<option value="Yellow">Yellow</option>
+		<option value="Orange">Orange</option>
+		<option value="Red">Red</option>
+		<option value="Other">Other</option>
+	</select>
+	<p><button onclick="addToCart('Sunflower (Realistic)', 300, 'sunflowerrealistic')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Tulips</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">130 PHP</p>
-	<p><button onclick="addToCart('Tulips', 130)">Add to Cart</button></p>
+
+	<select name="quantity-tulips" id="quantity-tulips" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-tulips" id="color-tulips" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Tulips', 130, 'tulips')">Add to Cart</button></p>
+
 </div>
 
 <div class="card">
 	<h2>Tulips (Realistic)</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">195 PHP</p>
-	<p><button onclick="addToCart('Tulips (Realistic)', 195)">Add to Cart</button></p>
+
+	<select name="quantity-tulipsrealistic" id="quantity-tulipsrealistic" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-tulipsrealistic" id="color-tulipsrealistic" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Tulips (Realistic)', 195, 'tulipsrealistic')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Lavender</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">80 PHP</p>
-	<p><button onclick="addToCart('Lavender', 80)">Add to Cart</button></p>
+
+	<select name="quantity-lavender" id="quantity-lavender" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-lavender" id="color-lavender" class="color">
+		<option value="Dark Purple">Dark Purple</option>
+		<option value="Lavender">Lavender</option>
+		<option value="Light Pink">Light Pink</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Pink">Pink</option>
+	</select>
+	<p><button onclick="addToCart('Lavender', 80, 'lavender')">Add to Cart</button></p>
 </div>
 
 
@@ -65,59 +184,252 @@
 	<h2>Lily</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">220 PHP</p>
-	<p><button onclick="addToCart('Lily', 220)">Add to Cart</button></p>
+
+	<select name="quantity-lily" id="quantity-lily" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-lily" id="color-lily" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Lily', 220, 'lily')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Rose</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">270 PHP</p>
-	<p><button onclick="addToCart('Rose', 270)">Add to Cart</button></p>
+
+	<select name="quantity-rose" id="quantity-rose" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-rose" id="color-rose" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Rose', 270, 'rose')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Lily of the Valley</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">150 PHP per stem</p>
-	<p><button onclick="addToCart('Lily of the Valley', 150)">Add to Cart</button></p>
+
+	<select name="quantity-lilyvalley" id="quantity-lilyvalley" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-lilyvalley" id="color-lilyvalley" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Lily of the Valley', 150, 'lilyvalley')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Daisy</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">130 PHP</p>
-	<p><button onclick="addToCart('Daisy', 130)">Add to Cart</button></p>
+	<select name="quantity-daisy" id="quantity-daisy" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-daisy" id="color-daisy" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Daisy', 130, 'daisy')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Sundrop Flower</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">390 PHP</p>
-	<p><button onclick="addToCart('Sundrop Flower', 390)">Add to Cart</button></p>
+
+	<select name="quantity-sundrop" id="quantity-sundrop" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+	<p><button onclick="addToCart('Sundrop Flower', 390, 'sundrop')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Calla Lily</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">150 PHP</p>
-	<p><button onclick="addToCart('Calla Lily', 150)">Add to Cart</button></p>
+
+	<select name="quantity-callalily" id="quantity-callalily" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-callalily" id="color-callalily" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Calla Lily', 150, 'callalily')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Stem of Leaves</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">70 PHP</p>
-	<p><button onclick="addToCart('Stem of Leaves', 70)">Add to Cart</button></p>
+
+	<select name="quantity-stemleaves" id="quantity-stemleaves" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-stemleaves" id="color-stemleaves" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
+	</select>
+	<p><button onclick="addToCart('Stem of Leaves', 70, 'stemleaves')">Add to Cart</button></p>
 </div>
 
-<b><h2>Your Cart</h2>
+<b><h2>Your Cart</h2></b>
 <ul id="cart"></ul>
 <button type="button" id="totalb"><b>&#9733; Total: placeholder &#9733;</b></button>
-</b>
+
+<button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear Cart</b></button>
+
+<button type="button" id="checkoutb" onclick="location.href='checkout.html'"><b>Checkout</b></button>
 </div>
 </div>
-
-
 
 <script src="app.js"></script>
 <footer>

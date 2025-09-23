@@ -28,7 +28,20 @@
 	<h2>Full Body</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">450 PHP</p>
-	<p><button onclick="addToCart('Full Body', 450)">Add to Cart</button></p>
+	<label for="quantity-fullbody">Quantity:</label>
+	<select name="quantity-fullbody" id="quantity-fullbody" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+	<p><button onclick="addCustomToCart('Full Body', 450, 'fullbody')">Add to Cart</button></p>
 
 </div>
 
@@ -36,20 +49,80 @@
 	<h2>Mini Characters</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">150 PHP</p>
-	<p><button onclick="addToCart('Mini Characters', 150)">Add to Cart</button></p>
+
+    <select name="quantity-minicharacters" id="quantity-minicharacters" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+	<p><button onclick="addCustomToCart('Mini Characters', 150, 'minicharacters')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Head Only</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">299 PHP</p>
-	<p><button onclick="addToCart('Head Only', 299)">Add to Cart</button></p>
+
+    <select name="quantity-headonly" id="quantity-headonly" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+	<p><button onclick="addCustomToCart('Head Only', 299, 'headonly')">Add to Cart</button></p>
 </div>
+
+<div class="card">
+	<h2>Baby Mushroom</h2>
+	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
+	<p class="price">65 PHP</p>
+
+    <select name="quantity-babymushroom" id="quantity-babymushroom" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-babymushroom" id="color-babymushroom" class="color">
+		<option value="Red">Red</option>
+		<option value="Blue">Blue</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Green">Green</option>
+		<option value="Pink">Pink</option>
+		<option value="White">White</option>
+	</select>
+	<p><button onclick="addCustomToCart('Baby Mushroom', 65, 'babymushroom')">Add to Cart</button></p>
+</div>
+
 </div>
 
 <b><h2>Your Cart</h2>
 <ul id="cart"></ul>
 <button type="button" id="totalb"><b>&#9733; Total: placeholder &#9733;</b></button>
+
+<button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear Cart</b></button>
+<button type="button" id="checkoutb" onclick="location.href='checkout.html'"><b>Checkout</b></button>
+
 </div>
 
 <script src="app.js"></script>
