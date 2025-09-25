@@ -1,3 +1,34 @@
+.cart-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+        width: 100%;
+}
+
+@media (max-width: 700px) {
+    .cart-section {
+        gap: 8px;
+        padding: 10px;
+    }
+    .cart-buttons {
+        gap: 6px;
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+#cart, #cart + button, #cart + button + button, #cart + button + button + button {
+    text-align: left;
+}
+
+.cart-section {
+    min-height: 220px; /* Adjust as needed for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
 body{
     background-color: #74512d;	
     color: #f8f4e1;
@@ -94,30 +125,54 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#submitb, #clearcartb, #checkoutb{
-    border: 1px #af8f6f;
-    color: #543310;
-    background-color: #f8f4e1;
-    padding:15px; 
-    margin-bottom: 20px; 
-    border-radius: 100px;
-    width: 25%;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    cursor: pointer;
-    margin-top: 8px;
+
+#submitb, #clearcartb, #checkoutb, .cart-section button {
+        border: 1px #af8f6f;
+        color: #543310;
+        background-color: #f8f4e1;
+        padding: 12px 18px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+        width: auto;
+        min-width: 90px;
+        max-width: 180px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        margin-top: 8px;
+        box-sizing: border-box;
+        flex-shrink: 1;
 }
 
-#totalb{
-    border:1px #af8f6f;
-    color: #543310;
-    background-color: #f8f4e1;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 100px;
-    width: fit-content;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+#totalb {
+        border:1px #af8f6f;
+        color: #543310;
+        background-color: #f8f4e1;
+        padding: 12px 18px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+        width: auto;
+        min-width: 90px;
+        max-width: 180px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        box-sizing: border-box;
+        flex-shrink: 1;
+}
+
+@media (max-width: 700px) {
+    .cart-section {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    #submitb, #clearcartb, #checkoutb, .cart-section button, #totalb {
+        font-size: 15px;
+        min-width: 60px;
+        max-width: 100px;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        margin-top: 4px;
+    }
 }
 
 .insta{
@@ -279,6 +334,8 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
     
+
+
 /*
 - fix the custom and hair accessory cart display
 - replace the placeholder pictures
