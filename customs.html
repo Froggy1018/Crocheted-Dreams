@@ -28,7 +28,6 @@
 	<h2>Full Body</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">450 PHP</p>
-	<label for="quantity-fullbody">Quantity:</label>
 	<select name="quantity-fullbody" id="quantity-fullbody" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
@@ -116,12 +115,15 @@
 
 </div>
 
-<b><h2>Your Cart</h2>
+<div class="cart-section">
+<b><h2>Your Cart</h2></b>
 <ul id="cart"></ul>
-<button type="button" id="totalb"><b>&#9733; Total: placeholder &#9733;</b></button>
-
-<button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear Cart</b></button>
-<button type="button" id="checkoutb" onclick="location.href='checkout.html'"><b>Checkout</b></button>
+<div class="cart-buttons">
+	<div id="cart-total"></div>
+  <button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear</b></button>
+  <button type="button" id="checkoutb" onclick="location.href='checkout.html'"><b>Checkout</b></button>
+</div>
+</div>
 
 </div>
 

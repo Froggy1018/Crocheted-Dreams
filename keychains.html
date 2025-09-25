@@ -288,6 +288,8 @@
 	</select>
 	<p><button onclick="addToCart('Clover', 25, 'clover')">Add to Cart</button></p>
 </div>
+</div>
+
 
 <p id="textsection"><u>Items</u></p>
 <div id="item" class="cards">
@@ -542,8 +544,8 @@
 <div class="card">
 	<h2>Capybara</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">90 PHP</p>		
-	<select name="quantity" id="quantity">
+	<p class="price">90 PHP</p>
+	<select name="quantity-capybara" id="quantity-capybara" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -562,42 +564,6 @@
 	<h2>Capybara with a hat</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">100 PHP</p>
-	<select name="quantity-capybara" id="quantity-capybara" class="quantity">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
-		<option value="6">6</option>
-		<option value="7">7</option>
-		<option value="8">8</option>
-		<option value="9">9</option>
-		<option value="10">10</option>
-	</select>
-
-	<select name="color" id="color">
-		<option value="Red">Red</option>
-		<option value="Watermelon Red">Watermelon Red</option>
-		<option value="Pink">Pink</option>
-		<option value="Blue">Blue</option>
-		<option value="Wine Red">Wine Red</option>
-		<option value="Green">Green</option>
-		<option value="Mint Green">Mint Green</option>
-		<option value="Violet">Violet</option>
-		<option value="Yellow">Yellow</option>
-		<option value="Black">Black</option>
-		<option value="Brown">Brown</option>
-		<option value="Hot Pink">Hot Pink</option>
-		<option value="Orange">Orange</option>
-		<option value="Other">Other (Add in the Additional Info section)</option>
-	</select>
-	<p><button onclick="addToCart('Capybara with a hat', 100, 'capybarahat')">Add to Cart</button></p>
-</div>
-
-<div class="card">
-	<h2>Capybara with a Special Hat & Bag</h2>
-	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">115 PHP</p>
 	<select name="quantity-capybarahat" id="quantity-capybarahat" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
@@ -610,8 +576,38 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
 	<select name="color-capybarahat" id="color-capybarahat" class="color">
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+	</select>
+	<p><button onclick="addToCart('Capybara with a hat', 100, 'capybarahat')">Add to Cart</button></p>
+</div>
+
+<div class="card">
+	<h2>Capybara with a Special Hat & Bag</h2>
+	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
+	<p class="price">115 PHP</p>
+	<select name="quantity-capybaraspecial" id="quantity-capybaraspecial" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-capybaraspecial" id="color-capybaraspecial" class="color">
 		<option value="Strawberry">Strawberry</option>
 		<option value="Frog">Frog</option>
 		<option value="Orange">Orange</option>
@@ -627,42 +623,6 @@
 	<h2>Penguin</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">95 PHP</p>
-			<select name="quantity-capybaraspecial" id="quantity-capybaraspecial" class="quantity">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
-		<option value="6">6</option>
-		<option value="7">7</option>
-		<option value="8">8</option>
-		<option value="9">9</option>
-		<option value="10">10</option>
-	</select>
-
-	<select name="color-capybaraspecial" id="color-capybaraspecial" class="color">
-		<option value="Red">Red</option>
-		<option value="Watermelon Red">Watermelon Red</option>
-		<option value="Pink">Pink</option>
-		<option value="Blue">Blue</option>
-		<option value="Wine Red">Wine Red</option>
-		<option value="Green">Green</option>
-		<option value="Mint Green">Mint Green</option>
-		<option value="Violet">Violet</option>
-		<option value="Yellow">Yellow</option>
-		<option value="Black">Black</option>
-		<option value="Brown">Brown</option>
-		<option value="Hot Pink">Hot Pink</option>
-		<option value="Orange">Orange</option>
-		<option value="Other">Other (Add in the Additional Info section)</option>
-	</select>
-	<p><button onclick="addToCart('Penguin', 95, 'penguin')">Add to Cart</button></p>
-</div>
-
-<div class="card">
-	<h2>Octopus</h2>
-	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">45 PHP</p>
 			<select name="quantity-penguin" id="quantity-penguin" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
@@ -692,14 +652,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Octopus', 45, 'octopus')">Add to Cart</button></p>
+	<p><button onclick="addToCart('Penguin', 95, 'penguin')">Add to Cart</button></p>
 </div>
 
 <div class="card">
-	<h2>Cubic Animals</h2>
+	<h2>Octopus</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">90 PHP</p>
-		<select name="quantity-octopus" id="quantity-octopus" class="quantity">
+	<p class="price">45 PHP</p>
+			<select name="quantity-octopus" id="quantity-octopus" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -713,19 +673,29 @@
 	</select>
 
 	<select name="color-octopus" id="color-octopus" class="color">
-		<option value="Panda">Panda</option>
-		<option value="Cat">Cat</option>
-		<option value="Monkey">Monkey</option>
-		<option value="Axolotl">Axolotl</option>
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
+		<option value="Blue">Blue</option>
+		<option value="Wine Red">Wine Red</option>
+		<option value="Green">Green</option>
+		<option value="Mint Green">Mint Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Black">Black</option>
+		<option value="Brown">Brown</option>
+		<option value="Hot Pink">Hot Pink</option>
+		<option value="Orange">Orange</option>
+		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Cubic Animals', 90, 'cubicanimals')">Add to Cart</button></p>
+	<p><button onclick="addToCart('Octopus', 45, 'octopus')">Add to Cart</button></p>
 </div>
 
 <div class="card">
-	<h2>Jellyfish</h2>
+	<h2>Cubic Animals</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">65 PHP</p>
-			<select name="quantity-cubicanimals" id="quantity-cubicanimals" class="quantity">
+	<p class="price">90 PHP</p>
+		<select name="quantity-cubicanimals" id="quantity-cubicanimals" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -739,6 +709,32 @@
 	</select>
 
 	<select name="color-cubicanimals" id="color-cubicanimals" class="color">
+		<option value="Panda">Panda</option>
+		<option value="Cat">Cat</option>
+		<option value="Monkey">Monkey</option>
+		<option value="Axolotl">Axolotl</option>
+	</select>
+	<p><button onclick="addToCart('Cubic Animals', 90, 'cubicanimals')">Add to Cart</button></p>
+</div>
+
+<div class="card">
+	<h2>Jellyfish</h2>
+	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
+	<p class="price">65 PHP</p>
+			<select name="quantity-jellyfish" id="quantity-jellyfish" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-jellyfish" id="color-jellyfish" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -761,31 +757,6 @@
 	<h2>Loafy Cat</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">90 PHP</p>
-			<select name="quantity-jellyfish" id="quantity-jellyfish" class="quantity">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
-		<option value="6">6</option>
-		<option value="7">7</option>
-		<option value="8">8</option>
-		<option value="9">9</option>
-		<option value="10">10</option>
-	</select>
-
-	<select name="color-jellyfish" id="color-jellyfish" class="color">
-		<option value="Red">Red</option>
-		<option value="Watermelon Red">Watermelon Red</option>
-		<option value="Pink">Pink</option>
-	</select>
-	<p><button onclick="addToCart('Loafy Cat', 90, 'loafycat')">Add to Cart</button></p>
-</div>
-
-<div class="card">
-	<h2>Chicks</h2>
-	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">50 PHP</p>
 			<select name="quantity-loafycat" id="quantity-loafycat" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
@@ -800,18 +771,17 @@
 	</select>
 
 	<select name="color-loafycat" id="color-loafycat" class="color">
-		<option value="Cowboy">Cowboy</option>
-		<option value="Strawberry">Strawberry</option>
-		<option value="Pig">Pig</option>
-		<option value="Frog">Frog</option>
+		<option value="Red">Red</option>
+		<option value="Watermelon Red">Watermelon Red</option>
+		<option value="Pink">Pink</option>
 	</select>
-	<p><button onclick="addToCart('Chicks', 50, 'chicks')">Add to Cart</button></p>
+	<p><button onclick="addToCart('Loafy Cat', 90, 'loafycat')">Add to Cart</button></p>
 </div>
 
 <div class="card">
-	<h2>Fruity Cats</h2>
+	<h2>Chicks</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">90 PHP</p>
+	<p class="price">50 PHP</p>
 			<select name="quantity-chicks" id="quantity-chicks" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
@@ -826,18 +796,18 @@
 	</select>
 
 	<select name="color-chicks" id="color-chicks" class="color">
-		<option value="Apple">Apple</option>
-		<option value="Mango">Mango</option>
-		<option value="Lime">Lime</option>
-		<option value="Peach">Peach</option>
+		<option value="Cowboy">Cowboy</option>
+		<option value="Strawberry">Strawberry</option>
+		<option value="Pig">Pig</option>
+		<option value="Frog">Frog</option>
 	</select>
-	<p><button onclick="addToCart('Fruity Cats', 90, 'fruitycats')">Add to Cart</button></p>
+	<p><button onclick="addToCart('Chicks', 50, 'chicks')">Add to Cart</button></p>
 </div>
 
 <div class="card">
-	<h2>Bunny Banana</h2>
+	<h2>Fruity Cats</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">70 PHP</p>
+	<p class="price">90 PHP</p>
 			<select name="quantity-fruitycats" id="quantity-fruitycats" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
@@ -852,6 +822,32 @@
 	</select>
 
 	<select name="color-fruitycats" id="color-fruitycats" class="color">
+		<option value="Apple">Apple</option>
+		<option value="Mango">Mango</option>
+		<option value="Lime">Lime</option>
+		<option value="Peach">Peach</option>
+	</select>
+	<p><button onclick="addToCart('Fruity Cats', 90, 'fruitycats')">Add to Cart</button></p>
+</div>
+
+<div class="card">
+	<h2>Bunny Banana</h2>
+	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
+	<p class="price">70 PHP</p>
+			<select name="quantity-bunnybanana" id="quantity-bunnybanana" class="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select>
+
+	<select name="color-bunnybanana" id="color-bunnybanana" class="color">
 		<option value="Yellow">Yellow</option>
 		<option value="Green">Green</option>
 	</select>
@@ -862,7 +858,7 @@
 	<h2>Goldfish</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">35 PHP</p>
-			<select name="quantity-bunnybanana" id="quantity-bunnybanana" class="quantity">
+			<select name="quantity-goldfish" id="quantity-goldfish" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -881,7 +877,7 @@
 	<h2>Kitty Cat</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">65 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-kittycat" id="quantity-kittycat" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -900,7 +896,7 @@
 	<h2>Toasty Goose</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">120 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-toastygoose" id="quantity-toastygoose" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -919,7 +915,7 @@
 	<h2>Sprouting Friends</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">85 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-sproutingfriends" id="quantity-sproutingfriends" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -938,7 +934,7 @@
 	<h2>Taiyaki Cat</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">90 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-taiyakicat" id="quantity-taiyakicat" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -957,7 +953,7 @@
 	<h2>Spooky Spooky</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">85 PHP</p>
-			<select name="quantity" id="quantity">
+			<select name="quantity-spookyspooky" id="quantity-spookyspooky" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -970,7 +966,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color-bunnybanana" id="color-bunnybanana" class="color">
+	<select name="color-spookyspooky" id="color-spookyspooky" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -992,7 +988,8 @@
 <div class="card">
 	<h2>Mr. and Mrs. Monkey</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
-	<p class="price">50 PHP</p>		<select name="quantity" id="quantity">
+	<p class="price">50 PHP</p>		
+	<select name="quantity-mrmrsmonkey" id="quantity-mrmrsmonkey" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1004,6 +1001,12 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
+
+	<select name="color-mrmrsmonkey" id="color-mrmrsmonkey" class="color">
+		<option value="Mrs.">Mrs. Monkey</option>
+		<option value="Mr">Mr. Monkey</option>
+	</select>
+
 	<p><button onclick="addToCart('Mr. and Mrs. Monkey', 50, 'mrmrsmonkey')">Add to Cart</button></p>
 </div>
 
@@ -1011,7 +1014,7 @@
 	<h2>Sushi Meow!</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">85 PHP</p>
-			<select name="quantity-goldfish" id="quantity-goldfish" class="quantity">
+	<select name="quantity-sushimeow" id="quantity-sushimeow" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1024,7 +1027,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-sushimeow" id="color-sushimeow" class="color">
 		<option value="Egg">Egg</option>
 		<option value="Ikura">Ikura</option>
 		<option value="Tuna">Tuna</option>
@@ -1041,7 +1044,7 @@
 	<h2>Kitty Charm</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">45 PHP</p>
-		<select name="quantity-kittycat" id="quantity-kittycat" class="quantity">
+	<select name="quantity-kittyCharm" id="quantity-kittyCharm" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1054,7 +1057,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-kittyCharm" id="color-kittyCharm" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1070,14 +1073,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Kitty Charm',45 )">Add to Cart</button></p>
+	<p><button onclick="addToCart('Kitty Charm',45, 'kittyCharm' )">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Pochacco Cake</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">85 PHP</p>
-	<select name="quantity-toastygoose" id="quantity-toastygoose" class="quantity">
+	<select name="quantity-Pochaccocake" id="quantity-Pochaccocake" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1090,7 +1093,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-Pochaccocake" id="color-Pochaccocake" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1106,14 +1109,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Pochacco Cake', 85)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Pochacco Cake', 85, 'Pochaccocake')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Perry the Platypus</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">85 PHP</p>
-		<select name="quantity-sproutingfriends" id="quantity-sproutingfriends" class="quantity">
+		<select name="quantity-PerrythePlat" id="quantity-PerrythePlat" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1125,14 +1128,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Perry the Platypus', 85)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Perry the Platypus', 85,'PerrythePlat')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Hello Kitty</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">65 PHP</p>
-		<select name="quantity-taiyakicat" id="quantity-taiyakicat" class="quantity">
+		<select name="quantity-HelloKitty" id="quantity-HelloKitty" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1145,20 +1148,20 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-HelloKitty" id="color-HelloKitty" class="color">
 		<option value="Candy">Candy</option>
 		<option value="Fish Cake">Fish Cake</option>
 		<option value="Tomato">Tomato</option>
 		<option value="Blue Fish">Blue Fish</option>
 	</select>
-	<p><button onclick="addToCart('Hello Kitty', 65)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Hello Kitty', 65 ,'HelloKitty')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Toothless & Light Fury</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">100 PHP</p>
-		<select name="quantity-spookyspooky" id="quantity-spookyspooky" class="quantity">
+		<select name="quantity-Toothlessandlightfury" id="quantity-Toothlessandlightfury" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1171,19 +1174,18 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color-spookyspooky" id="color-spookyspooky" class="color">
+	<select name="color-Toothlessandlightfury" id="color-Toothlessandlightfury" class="color">
 		<option value="Light Fury">Light Fury</option>
 		<option value="Toothless">Toothless</option>
-		<option value="Both">Both (Pick 2 in Quantity)</option>
 	</select>
-	<p><button onclick="addToCart('Toothless & Light Fury', 100)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Toothless & Light Fury', 100, 'Toothlessandlightfury')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Cinnamonroll Flower</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">120 PHP</p>
-		<select name="quantity-mrmrsmonkey" id="quantity-mrmrsmonkey" class="quantity">
+		<select name="quantity-cinnamonrollflower" id="quantity-cinnamonrollflower" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1196,7 +1198,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-cinnamonrollflower" id="color-cinnamonrollflower" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1212,7 +1214,7 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Cinnamonroll Flower', 120)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Cinnamonroll Flower', 120, 'cinnamonrollflower')">Add to Cart</button></p>
 </div>
 
 <div class="card">
@@ -1240,7 +1242,7 @@
 	<h2>One Piece Hats</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">40 PHP</p>
-		<select name="quantity-sushimeow" id="quantity-sushimeow" class="quantity">
+		<select name="quantity-onepiecehats" id="quantity-onepiecehats" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1252,14 +1254,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('One Piece Hats', 40)">Add to Cart</button></p>
+	<p><button onclick="addToCart('One Piece Hats', 40, 'onepiecehats')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Chopper</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">55 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-chopper" id="quantity-chopper" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1272,18 +1274,14 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color-sushimeow" id="color-sushimeow" class="color">
-		<option value="Chopper">Chopper</option>
-		<option value="Custom">Custom</option>
-	</select>
-	<p><button onclick="addToCart('Chopper', 55)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Chopper', 55, 'chopper')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Gojo and Geto Cat</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">60 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-gojogetocat" id="quantity-gojogetocat" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1296,19 +1294,19 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-gojogetocat" id="color-gojogetocat" class="color">
 		<option value="Gojo">Gojo</option>
 		<option value="Geto">Geto</option>
 		<option value="Both">Both (Pick 2 in Quantity)</option>
 	</select>
-	<p><button onclick="addToCart('Gojo and Geto Cat', 60)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Gojo and Geto Cat', 60, 'gojogetocat')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Gojo and Geto Kitty</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">65 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-gojogetokitty" id="quantity-gojogetokitty" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1321,19 +1319,18 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-gojogetokitty" id="color-gojogetokitty" class="color">
 		<option value="Gojo">Gojo</option>
 		<option value="Geto">Geto</option>
-		<option value="Both">Both (Pick 2 in Quantity)</option>
 	</select>
-	<p><button onclick="addToCart('Gojo and Geto Kitty', 65)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Gojo and Geto Kitty', 65, 'gojogetokitty')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Spiderman and Hello Kitty</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">65 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-spidermanandhellokitty" id="quantity-spidermanandhellokitty" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1346,19 +1343,18 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-spidermanandhellokitty" id="color-spidermanandhellokitty" class="color">
 		<option value="Spiderman">Spiderman</option>
 		<option value="Hello Kitty">Hello Kitty</option>
-		<option value="Both">Both (Pick 2 in Quantity)</option>
 	</select>
-	<p><button onclick="addToCart('Spiderman and Hello Kitty', 65)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Spiderman and Hello Kitty', 65, 'spidermanandhellokitty')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Mr. Flan</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">55 PHP</p>
-			<select name="quantity" id="quantity">
+	<select name="quantity-MrFlan" id="quantity-MrFlan" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1370,14 +1366,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Mr. Flan', 55)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Mr. Flan', 55, 'MrFlan')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Roronoa Zoro</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">200 PHP</p>
-			<select name="quantity" id="quantity">
+			<select name="quantity-roronoazoro" id="quantity-roronoazoro" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1389,7 +1385,7 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Roronoa Zoro', 200)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Roronoa Zoro', 200, 'roronoazoro')">Add to Cart</button></p>
 </div>
 
 
@@ -1402,7 +1398,7 @@
 	<h2>Strawberry</h2>
 	<img src="https://i.ibb.co/9mDpQ7N7/straw-removebg-preview.png" style="width:70%">
 	<p class="price">65 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-strawberry" id="quantity-strawberry" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1414,28 +1410,19 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	<select name="color" id="color">
-		<option value="Strawcolor">-Strawberry Color-</option>
+	<select name="color-strawberry" id="color-strawberry" class="color">
+		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
-		<option value="Red">Red</option>
 	</select>
-
-	<select name="color" id="color">
-		<option value="Chococolor">-Chocolate Color-</option>
-		<option value="White">White</option>
-		<option value="LBrown">Light Brown</option>
-		<option value="DBrown">Dark Brown</option>
-	</select>
-	<p><button onclick="addToCart('Strawberry', 65)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Strawberry', 65, 'strawberry')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Cherry</h2>
 	<img src="https://i.ibb.co/S7tpp1ys/Screenshot-2025-09-19-205220-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-cherry" id="quantity-cherry" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1447,8 +1434,7 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	<select name="color" id="color">
+	<select name="color-cherry" id="color-cherry" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1464,14 +1450,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Cherry', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Cherry', 50, 'cherry')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Rolled Cake</h2>
 	<img src="https://i.ibb.co/v6s9Gz1H/Screenshot-2025-09-19-205229-removebg-preview.png" style="width:70%">
 	<p class="price">30 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-rolledcake" id="quantity-rolledcake" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1483,8 +1469,7 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-
-	<select name="color" id="color">
+	<select name="color-rolledcake" id="color-rolledcake" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1500,14 +1485,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Rolled Cake',30 )">Add to Cart</button></p>
+	<p><button onclick="addToCart('Rolled Cake', 30, 'rolledcake')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Blueberry</h2>
 	<img src="https://i.ibb.co/zVFNtf5N/Screenshot-2025-09-19-205336-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-blueberry" id="quantity-blueberry" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1520,20 +1505,20 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-blueberry" id="color-blueberry" class="color">
 		<option value="Light Blue">Light Blue</option>
 		<option value="Dark Blue">Dark Blue</option>
 		<option value="Violet">Violet</option>
 		<option value="Lavender">Lavender</option>
 	</select>
-	<p><button onclick="addToCart('Blueberry', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Blueberry', 50, 'blueberry')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Fruits</h2>
 	<img src="https://i.ibb.co/wNSHtyMG/Screenshot-2025-09-19-205239-removebg-preview.png" style="width:70%">
 	<p class="price">70 PHP</p>
-		<select name="quantity" id="quantity">
+		<select name="quantity-fruits" id="quantity-fruits" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1546,19 +1531,19 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-fruits" id="color-fruits" class="color">
 		<option value="Orange">Orange</option>
 		<option value="Tomato">Tomato</option>
 		<option value="Peach">Peach</option>
 	</select>
-	<p><button onclick="addToCart('Fruits', 70)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Fruits', 70, 'fruits')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Veggies</h2>
 	<img src="https://i.ibb.co/dJ3dmLXQ/Screenshot-2025-09-19-205249-removebg-preview.png" style="width:70%">
 	<p class="price">70 PHP</p>
-		<select name="quantity" id="quantity">
+		<select name="quantity-veggies" id="quantity-veggies" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1571,19 +1556,19 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-veggies" id="color-veggies" class="color">
 		<option value="Broccoli">Broccoli</option>
 		<option value="Carrot">Carrot</option>
 		<option value="Pumpkin">Pumpkin</option>
 	</select>
-	<p><button onclick="addToCart('Veggies',70 )">Add to Cart</button></p>
+	<p><button onclick="addToCart('Veggies', 70, 'veggies')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Dumpling</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-dumpling" id="quantity-dumpling" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1595,7 +1580,7 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Dumplings', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Dumplings', 50, 'dumpling')">Add to Cart</button></p>
 </div>
 
 
@@ -1603,7 +1588,7 @@
 	<h2>Onigiri</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">60 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-onigiri" id="quantity-onigiri" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1615,14 +1600,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Onigiri', 60)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Onigiri', 60, 'onigiri')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Narutomaki</h2>
 	<img src="https://i.ibb.co/nNtgKpmg/Screenshot-2025-04-17-202917-removebg-preview.png" style="width:70%">
 	<p class="price">20 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-narutomaki" id="quantity-narutomaki" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1634,14 +1619,14 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<p><button onclick="addToCart('Narutomaki', 20)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Narutomaki', 20, 'narutomaki')">Add to Cart</button></p>
 </div> 
 
 <div class="card">
 	<h2>Mushroom</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">40 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-mushroom" id="quantity-mushroom" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1654,7 +1639,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-mushroom" id="color-mushroom" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1670,14 +1655,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Mushroom', 40)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Mushroom', 40, 'mushroom')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Taiyaki</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">75 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-taiyaki" id="quantity-taiyaki" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1690,7 +1675,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-taiyaki" id="color-taiyaki" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1706,14 +1691,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Taiyaki', 75)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Taiyaki', 75, 'taiyaki')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Oops, Ice Cream?</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">50 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-icecream" id="quantity-icecream" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1726,7 +1711,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-icecream" id="color-icecream" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1742,14 +1727,14 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Oops, Ice Cream?', 50)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Oops, Ice Cream?', 50, 'icecream')">Add to Cart</button></p>
 </div>
 
 <div class="card">
 	<h2>Heart Cake</h2>
 	<img src="https://i.ibb.co/GfB57mxg/Screenshot-2025-04-17-202101-removebg-preview.png" style="width:70%">
 	<p class="price">100 PHP</p>
-		<select name="quantity" id="quantity">
+	<select name="quantity-heartcake" id="quantity-heartcake" class="quantity">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -1762,7 +1747,7 @@
 		<option value="10">10</option>
 	</select>
 
-	<select name="color" id="color">
+	<select name="color-heartcake" id="color-heartcake" class="color">
 		<option value="Red">Red</option>
 		<option value="Watermelon Red">Watermelon Red</option>
 		<option value="Pink">Pink</option>
@@ -1778,18 +1763,21 @@
 		<option value="Orange">Orange</option>
 		<option value="Other">Other (Add in the Additional Info section)</option>
 	</select>
-	<p><button onclick="addToCart('Heart Cake', 100)">Add to Cart</button></p>
+	<p><button onclick="addToCart('Heart Cake', 100, 'heartcake')">Add to Cart</button></p>
 </div>
 </div>
 
+<div class="cart-section">
 <b><h2>Your Cart</h2></b>
 <ul id="cart"></ul>
-<button type="button" id="totalb"><b>&#9733; Total: placeholder &#9733;</b></button>
+<div class="cart-buttons">
+	<div id="cart-total"></div>
+  <button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear</b></button>
+  <button type="button" id="checkoutb" onclick="location.href='checkout.html'" ><b>Checkout</b></button>
+</div>
+</div>
 
-<button type="button" id="clearcartb" onclick="resetCart()"><b>&#10060; Clear Cart</b></button>
-
-<button type="button" id="checkoutb" onclick="location.href='checkout.html'"><b>Checkout</b></button>
-
+</div>
 </div>
 </div>
 <script src="app.js"></script>

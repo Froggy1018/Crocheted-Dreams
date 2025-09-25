@@ -1,3 +1,39 @@
+.cart-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+}
+
+@media (max-width: 700px) {
+    .cart-section {
+        gap: 2px;
+        padding: 5px;
+    }
+    .cart-buttons {
+        gap: 2px;
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+#cart, #cart + button, #cart + button + button, #cart + button + button + button {
+    text-align: left;
+}
+
+.cart-section {
+    min-height: 220px; /* Adjust as needed for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
 body{
     background-color: #74512d;	
     color: #f8f4e1;
@@ -94,30 +130,58 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#submitb, #clearcartb, #checkoutb{
-    border: 1px #af8f6f;
-    color: #543310;
-    background-color: #f8f4e1;
-    padding:15px; 
-    margin-bottom: 20px; 
-    border-radius: 100px;
-    width: 25%;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    cursor: pointer;
-    margin-top: 8px;
+
+#submitb, #clearcartb, #checkoutb, .cart-section button {
+        border: 1px #af8f6f;
+        color: #543310;
+        background-color: #f8f4e1;
+        padding: 12px 18px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+        width: auto;
+        min-width: 90px;
+        max-width: 180px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        margin-top: 8px;
+        box-sizing: border-box;
+        flex-shrink: 1;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
-#totalb{
-    border:1px #af8f6f;
-    color: #543310;
-    background-color: #f8f4e1;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 100px;
-    width: fit-content;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+#totalb {
+        border:1px #af8f6f;
+        color: #543310;
+        background-color: #f8f4e1;
+        padding: 12px 18px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+        width: auto;
+        min-width: 90px;
+        max-width: 180px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        box-sizing: border-box;
+        flex-shrink: 1;
+}
+
+@media (max-width: 700px) {
+    .cart-section {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    #submitb, #clearcartb, #checkoutb, .cart-section button, #totalb {
+        font-size: 15px;
+        min-width: 60px;
+        max-width: 100px;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        margin-top: 4px;
+    }
 }
 
 .insta{
@@ -251,6 +315,29 @@ footer{
 #cart{
     margin-top: 10px;
     color: #543310;
+    list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart li {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5em;
+  color: #543310;
+  background: #f8f4e1;
+  border-radius: 4px;
+  padding: 0.5em 0.75em;
+}
+
+#cart-total {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #f8f4e1;
+  background: #543310;
+  padding: 0.5em 1em;
+  border-radius: 6px;
 }
 
 .quantity{
@@ -279,6 +366,8 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
     
+
+
 /*
 - fix the custom and hair accessory cart display
 - replace the placeholder pictures
@@ -286,4 +375,50 @@ footer{
 - Change title to logo
 - make it so that each item can be removed individually from the cart
 - make it so that the button will change color when its already in the cart
-*/ 
+*/
+
+button, .cart-buttons button, #checkoutb, #clearcartb, #submitb {
+  background-color: #543310;
+  color: #f8f4e1;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  font-family: inherit;
+  cursor: pointer;
+  margin: 0.2em 0.3em;
+  transition: background 0.2s, color 0.2s;
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover, .cart-buttons button:hover, #checkoutb:hover, #clearcartb:hover, #submitb:hover {
+  background-color: #74512d;
+  color: #fffbe6;
+}
+
+/* Left-align Items title and cart items in checkout, keep sizing */
+.cart-section label#item {
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-left: 0;
+}
+#cart {
+  text-align: left;
+  width: auto;
+  margin-left: 0;
+}
+#cart li {
+  text-align: left;
+  width: auto;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5em;
+  color: #543310;
+  background: #f8f4e1;
+  border-radius: 4px;
+  padding: 0.5em 0.75em;
+}
