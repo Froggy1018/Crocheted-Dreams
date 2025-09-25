@@ -60,19 +60,18 @@ function addCustomToCart(productName, productPrice, idSuffix) {
 
 function updateCartDisplay(){
     const cartList = document.getElementById('cart');
+    const cartTotal = document.getElementById('cart-total');
     if (!cartList) return;
     cartList.innerHTML = '';
     let total = 0;
     for(let product in cart){
-        const listItem = document.createElement('li');
-        let colorText = cart[product].color ? `, Color: ${cart[product].color}` : '';
-        listItem.innerText = `${product} - Quantity: ${cart[product].quantity}${colorText} - total Price: ₱${cart[product].totalPrice.toFixed(2)}`;
-        cartList.appendChild(listItem);
-        total += cart[product].totalPrice;
+        const item = cart[product];
+        let colorText = item.color ? `, <b>Color:</b> ${item.color}` : '';
+        cartList.innerHTML += `<li><b>${product}</b> - <b>Qty:</b> ${item.quantity}${colorText} - <b>₱${item.totalPrice.toFixed(2)}</b></li>`;
+        total += item.totalPrice;
     }
-    const totalBtn = document.getElementById('totalb');
-    if (totalBtn) {
-        totalBtn.innerHTML = `<b>&#9733; Total: ₱${total.toFixed(2)} &#9733;</b>`;
+    if (cartTotal) {
+        cartTotal.innerHTML = `Total: ₱${total.toFixed(2)}`;
     }
 }
 
@@ -91,3 +90,33 @@ function resetCart() {
     updateCartDisplay();
 }
 
+function submitToSheet() {
+  const name = document.getElementById('nameb')?.value || '';
+  const email = document.getElementById('emailb')?.value || '';
+  const message = document.getElementById('message')?.value || '';
+  const cartString = JSON.stringify(cart);
+
+  // Calculate total
+  let total = 0;
+  for (let product in cart) {
+    total += cart[product].totalPrice;
+  }
+
+  const formData = new FormData();
+  formData.append('entry.592178790', name);      // Name field's entry ID
+  formData.append('entry.1360041219', email);    // Email field's entry ID
+  formData.append('entry.1682171163', message);  // Message field's entry ID
+  formData.append('entry.65011336', cartString); // Cart field's entry ID
+  formData.append('entry.1390758339', total); // <-- Replace with your Total field's entry ID
+
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLSd39O4-T4zhkh6ZBAgX_clN4JY-R9mIw-hmIeQjFM3NI-Hsbg/formResponse', {
+    method: 'POST',
+    mode: 'no-cors',
+    body: formData
+  }).then(() => {
+    alert('Order submitted!');
+    resetCart();
+  }).catch(() => {
+    alert('There was an error submitting your order.');
+  });
+}

@@ -4,15 +4,19 @@
         gap: 12px;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
 }
 
 @media (max-width: 700px) {
     .cart-section {
-        gap: 8px;
-        padding: 10px;
+        gap: 2px;
+        padding: 5px;
     }
     .cart-buttons {
-        gap: 6px;
+        gap: 2px;
         flex-direction: row;
         align-items: stretch;
     }
@@ -26,8 +30,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
+    width: 100%;
 }
 body{
     background-color: #74512d;	
@@ -142,6 +147,10 @@ footer{
         margin-top: 8px;
         box-sizing: border-box;
         flex-shrink: 1;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 #totalb {
@@ -306,6 +315,29 @@ footer{
 #cart{
     margin-top: 10px;
     color: #543310;
+    list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart li {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5em;
+  color: #543310;
+  background: #f8f4e1;
+  border-radius: 4px;
+  padding: 0.5em 0.75em;
+}
+
+#cart-total {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #f8f4e1;
+  background: #543310;
+  padding: 0.5em 1em;
+  border-radius: 6px;
 }
 
 .quantity{
@@ -343,4 +375,50 @@ footer{
 - Change title to logo
 - make it so that each item can be removed individually from the cart
 - make it so that the button will change color when its already in the cart
-*/ 
+*/
+
+button, .cart-buttons button, #checkoutb, #clearcartb, #submitb {
+  background-color: #543310;
+  color: #f8f4e1;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  font-family: inherit;
+  cursor: pointer;
+  margin: 0.2em 0.3em;
+  transition: background 0.2s, color 0.2s;
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover, .cart-buttons button:hover, #checkoutb:hover, #clearcartb:hover, #submitb:hover {
+  background-color: #74512d;
+  color: #fffbe6;
+}
+
+/* Left-align Items title and cart items in checkout, keep sizing */
+.cart-section label#item {
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-left: 0;
+}
+#cart {
+  text-align: left;
+  width: auto;
+  margin-left: 0;
+}
+#cart li {
+  text-align: left;
+  width: auto;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5em;
+  color: #543310;
+  background: #f8f4e1;
+  border-radius: 4px;
+  padding: 0.5em 0.75em;
+}
