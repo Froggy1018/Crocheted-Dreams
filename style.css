@@ -26,7 +26,7 @@
 }
 
 .cart-section {
-    min-height: 220px; /* Adjust as needed for uniformity */
+    min-height: 220px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -49,7 +49,6 @@ header{
     margin: 0;
 }
 
-/*find out how to fill in the gaps TWT */
 
 .logo, .slogan{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -365,17 +364,6 @@ footer{
     margin-bottom: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-    
-
-
-/*
-- fix the custom and hair accessory cart display
-- replace the placeholder pictures
-- redo the JS for the spreadsheet mover
-- Change title to logo
-- make it so that each item can be removed individually from the cart
-- make it so that the button will change color when its already in the cart
-*/
 
 button, .cart-buttons button, #checkoutb, #clearcartb, #submitb {
   background-color: #543310;
@@ -399,7 +387,6 @@ button:hover, .cart-buttons button:hover, #checkoutb:hover, #clearcartb:hover, #
   color: #fffbe6;
 }
 
-/* Left-align Items title and cart items in checkout, keep sizing */
 .cart-section label#item {
   text-align: left;
   width: 100%;
